@@ -1,0 +1,45 @@
+.site-header
+{
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-brand img
+{
+  margin-top: -@navbar-padding-vertical + (@navbar-height - @logo-height) / 2;
+}
+
+.welcome {
+  display: table;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: @navbar-height;
+
+  background: url("../img/header.jpg") no-repeat center top; // fixed;
+  background-size: cover;
+
+    > p
+    {
+      display: table-cell;
+      vertical-align: middle;
+
+      font-size: 3.5em;
+      color: #fff;
+    }
+
+    > a
+    {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+}
+
+

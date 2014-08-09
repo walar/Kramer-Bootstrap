@@ -2,6 +2,44 @@
 // Variables
 // --------------------------------------------------
 
+@brand-primary:         #2ECC71;
+@text-color:            #2C3E50;
+
+//** navbar
+// Basics of a navbar
+@navbar-height:                    73px;
+@navbar-border-radius:             0;
+
+@navbar-default-color:             #fff;
+@navbar-default-bg:                #2C3E50;
+@navbar-default-border:            transparent;
+
+// Navbar links
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-bg:             #2ECC71;
+@navbar-default-link-active-color:         darken(@navbar-default-link-color, 6.5%);
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #aaa;
+@navbar-default-toggle-icon-bar-bg:        #fff;
+@navbar-default-toggle-border-color:       transparent;
+
 
 //** Load fonts from this directory.
 @icon-font-path:          "../vendor/bootstrap/fonts/";
+
+
+
+@logo-height:         52px;
+
+@about-bg:            #2C3E50;
+@portfolio-bg:        #FFF;
+@team-bg:             #2980b9;
+@footer-bg:           @about-bg;
