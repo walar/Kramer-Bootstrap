@@ -6192,9 +6192,6 @@ html {
 html body {
   height: 100%;
 }
-.container {
-  max-width: 800px;
-}
 .icons-services {
   display: inline-block;
   background: transparent url('../img/services-icons.png') no-repeat;
@@ -6304,9 +6301,6 @@ html body {
 .site-main [id="about"] h3 span + span {
   display: block;
   margin-top: 15px;
-}
-.site-main [id="about"] p {
-  text-align: justify;
 }
 .site-main [id="portfolio"] {
   background-color: #ffffff;
