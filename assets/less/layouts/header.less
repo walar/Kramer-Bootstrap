@@ -7,12 +7,24 @@
   width: 100%;
 }
 
+.navbar
+{
+  border: 0 none;
+  border-bottom: 1px solid @navbar-default-border;
+}
+
 .navbar-brand img
 {
   margin-top: -@navbar-padding-vertical + (@navbar-height - @logo-height) / 2;
+
+  &:hover
+  , &:focus
+  {
+    opacity: 0.5;
+  }
 }
 
-.welcome {
+[id="banner"] {
   display: table;
   position: relative;
   text-align: center;
@@ -23,23 +35,52 @@
   background: url("../img/header.jpg") no-repeat center top; // fixed;
   background-size: cover;
 
-    > p
+    > p:first-child
     {
       display: table-cell;
+      padding-bottom: 2em;
       vertical-align: middle;
-
+      font-family: @font-family-sans-serif;
       font-size: 3.5em;
       color: #fff;
     }
 
-    > a
+    > p + p
     {
       position: absolute;
-      bottom: 0;
+      bottom: 0.25em;
       left: 0;
       width: 100%;
-    }
+      text-align: center;
+      font-family: @font-family-sans-serif;
 
+        > a
+        {
+          display: inline-block;
+          font-size: 2em;
+          text-decoration: none;
+
+            &:hover
+            , &:focus
+            {
+              opacity: 0.75;
+            }
+
+            .icon-explore
+            {
+              display: inline-block;
+              background: transparent url('../img/btn-explore.png') no-repeat;
+              width: 64px;
+              height: 64px;
+            }
+
+            span + span
+            {
+              display: block;
+              color: white;
+            }
+        }
+    }
 }
 
 

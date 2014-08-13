@@ -3,7 +3,15 @@
 // --------------------------------------------------
 
 @brand-primary:         #2ECC71;
-@text-color:            #2C3E50;
+@text-color:            #34495e;
+
+
+@font-family-sans-serif:  "Droid Sans", Helvetica, Arial, sans-serif;
+@font-family-serif:       "Droid Serif", Georgia, "Times New Roman", Times, serif;
+@font-family-base:        @font-family-sans-serif;
+
+
+
 
 //** navbar
 // Basics of a navbar
@@ -11,15 +19,15 @@
 @navbar-border-radius:             0;
 
 @navbar-default-color:             #fff;
-@navbar-default-bg:                #2C3E50;
-@navbar-default-border:            transparent;
+@navbar-default-bg:                rgba(44, 62, 80, 0.8);
+@navbar-default-border:            rgba(255,255,255,0.3);
 
 // Navbar links
 @navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          #fff;
 @navbar-default-link-hover-bg:             #2ECC71;
-@navbar-default-link-active-color:         darken(@navbar-default-link-color, 6.5%);
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         @navbar-default-link-color;
+@navbar-default-link-active-bg:            rgba(46, 204, 113, 0.5);
 
 // Navbar brand label
 @navbar-default-brand-color:               @navbar-default-link-color;

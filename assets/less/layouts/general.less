@@ -4,6 +4,7 @@ html
 
   body
   {
+    position: relative;
     height: 100%;
 
     @media (min-width: @grid-float-breakpoint) {
@@ -11,6 +12,11 @@ html
       // margin: 0 auto;
     }
   }
+}
+
+p
+{
+  font-family: @font-family-serif;
 }
 
 .icons-services
@@ -58,6 +64,12 @@ html
     .btn-social();
 
   background-position: 0 0;
+
+    &:hover
+    , &:focus
+    {
+      background-position: 0 -30px;
+    }
 }
 
 .btn-instagram
@@ -65,6 +77,12 @@ html
     .btn-social();
 
   background-position: -30px 0;
+
+    &:hover
+    , &:focus
+    {
+      background-position: -30px -30px;
+    }
 }
 
 .btn-facebook
@@ -72,4 +90,10 @@ html
     .btn-social();
 
   background-position: -60px 0;
+
+    &:hover
+    , &:focus
+    {
+      background-position: -60px -30px;
+    }
 }
